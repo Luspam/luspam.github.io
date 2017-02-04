@@ -1,0 +1,47 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 8, 18], 3.4, 8.9, 11.4, 0],
+[[0, 24, 17], 2.7, 8.9, 11.4, 0],
+[[0, 39, 17], 2.0, 8.9, 11.4, 0],
+[[0, 55, 17], 1.8, 8.9, 11.4, 0],
+[[1, 11, 16], 1.2, 8.9, 11.4, 0],
+[[1, 26, 17], 0.9, 9.0, 11.4, 0],
+[[1, 42, 16], 0.5, 9.0, 11.4, 0],
+[[1, 57, 16], 0.2, 9.0, 11.4, 0],
+[[2, 13, 16], -0.1, 9.0, 11.4, 0],
+[[2, 28, 16], -0.6, 9.0, 11.4, 0],
+[[2, 44, 15], -0.7, 9.0, 11.4, 0],
+[[3, 0, 15], -0.6, 9.0, 11.4, 0],
+[[3, 16, 15], -0.4, 9.1, 11.4, 0],
+[[3, 32, 15], 0.1, 9.1, 11.4, 0]
+]);
+var options = {
+title: '4/2/2017',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
