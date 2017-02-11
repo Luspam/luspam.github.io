@@ -42,9 +42,12 @@
 [new Date(2017,0,30), -1.3],
 [new Date(2017,0,31), -1.2]
 ]);
+
 var options = {
-title: 'Temperature Minime'
+title: 'Temperature Minime',
+pointSize: 5
 }
+
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
         chart.draw(data, options);
