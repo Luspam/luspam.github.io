@@ -1,0 +1,41 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 3, 56], 6.0, 13.6, 36.6, 0],
+[[0, 18, 56], 5.4, 13.7, 36.4, 0],
+[[0, 34, 56], 4.8, 13.7, 35.9, 0],
+[[0, 50, 55], 4.3, 13.7, 35.6, 0],
+[[1, 6, 55], 3.7, 13.8, 35.5, 0],
+[[1, 22, 55], 3.4, 13.9, 35.4, 0],
+[[1, 38, 55], 3.2, 13.9, 35.2, 0],
+[[1, 54, 54], 3.1, 14.0, 35.1, 0]
+]);
+var options = {
+title: '9/3/2019',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
