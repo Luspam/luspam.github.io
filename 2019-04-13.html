@@ -1,0 +1,48 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 11, 20], 8.5, 19.9, 25.5, 0],
+[[0, 26, 20], 8.9, 19.9, 25.5, 0],
+[[0, 42, 20], 9.2, 19.8, 25.3, 0],
+[[0, 58, 20], 9.2, 19.6, 25.1, 0],
+[[1, 13, 20], 9.4, 19.6, 25.1, 0],
+[[1, 28, 20], 9.3, 19.4, 24.8, 0],
+[[1, 44, 20], 8.9, 19.4, 24.8, 0],
+[[2, 0, 20], 8.6, 19.4, 24.8, 0],
+[[2, 15, 20], 8.4, 19.4, 24.8, 0],
+[[2, 31, 20], 8.2, 19.4, 24.8, 0],
+[[2, 47, 20], 7.8, 19.4, 24.8, 0],
+[[3, 3, 20], 7.4, 19.4, 24.8, 0],
+[[3, 19, 19], 7.1, 19.4, 24.8, 0],
+[[3, 35, 19], 6.5, 19.4, 24.8, 0],
+[[3, 50, 19], 6.1, 19.4, 24.8, 0]
+]);
+var options = {
+title: '13/4/2019',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
