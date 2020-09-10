@@ -1,0 +1,41 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 5, 5], 21.6, 36.0, 44.0, 0],
+[[0, 21, 4], 21.3, 35.9, 44.0, 0],
+[[0, 36, 4], 21.1, 35.8, 44.0, 0],
+[[0, 52, 4], 20.8, 35.7, 43.9, 0],
+[[1, 8, 4], 20.5, 35.6, 43.9, 0],
+[[1, 24, 4], 20.2, 35.5, 43.8, 0],
+[[1, 40, 4], 20.2, 35.5, 43.8, 0],
+[[1, 56, 3], 20.2, 35.4, 43.7, 0]
+]);
+var options = {
+title: '11/9/2020',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
