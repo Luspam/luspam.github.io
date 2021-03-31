@@ -1,0 +1,42 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 15, 11], 10.2, 19.7, 44.7, 0],
+[[0, 30, 11], 9.9, 19.8, 44.6, 0],
+[[0, 46, 10], 9.5, 19.9, 44.4, 0],
+[[1, 1, 10], 9.2, 20.0, 44.3, 0],
+[[1, 17, 10], 9.0, 20.1, 44.2, 0],
+[[1, 32, 10], 8.8, 20.2, 44.0, 0],
+[[1, 47, 10], 8.6, 20.3, 43.9, 0],
+[[2, 3, 10], 8.4, 20.4, 43.8, 0],
+[[2, 18, 10], 8.1, 20.5, 43.7, 0]
+]);
+var options = {
+title: '31/3/2021',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
