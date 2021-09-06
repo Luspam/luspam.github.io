@@ -1,0 +1,58 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+	function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('date', 'Data');
+		  data.addColumn('number', 'T. min.');
+	data.addRows([
+
+[new Date(2018,3,1), -0.5],
+[new Date(2018,3,2), -0.5],
+[new Date(2018,3,3), 5.2],
+[new Date(2018,3,4), 5.4],
+[new Date(2018,3,5), 4.3],
+[new Date(2018,3,6), 2.7],
+[new Date(2018,3,7), 7.7],
+[new Date(2018,3,8), 10.5],
+[new Date(2018,3,9), 10.2],
+[new Date(2018,3,10), 7.8],
+[new Date(2018,3,11), 8.3],
+[new Date(2018,3,12), 5.9],
+[new Date(2018,3,13), 6.6],
+[new Date(2018,3,14), 7.6],
+[new Date(2018,3,15), 6.1],
+[new Date(2018,3,16), 5.5],
+[new Date(2018,3,17), 7.1],
+[new Date(2018,3,18), 12.1],
+[new Date(2018,3,19), 7.4],
+[new Date(2018,3,20), 8.7],
+[new Date(2018,3,21), 7.6],
+[new Date(2018,3,22), 8.6],
+[new Date(2018,3,23), 11.5],
+[new Date(2018,3,24), 11.1],
+[new Date(2018,3,25), 10.2],
+[new Date(2018,3,26), 10],
+[new Date(2018,3,27), 12.1],
+[new Date(2018,3,28), 15],
+[new Date(2018,3,29), 12.9],
+]);
+
+var options = {
+title: 'Temperature Minime',
+pointSize: 5
+}
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
+
