@@ -1,0 +1,46 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 6, 25], 7.8, 13.6, 13.6, 0],
+[[0, 22, 24], 7.6, 13.6, 13.6, 0],
+[[0, 37, 24], 7.4, 13.6, 13.6, 0],
+[[0, 53, 23], 7.2, 13.6, 13.6, 0],
+[[1, 9, 23], 7.0, 13.6, 13.6, 0],
+[[1, 25, 21], 6.7, 13.6, 13.6, 0],
+[[1, 41, 21], 6.6, 13.6, 13.6, 0],
+[[1, 57, 20], 6.5, 13.6, 13.6, 0],
+[[2, 13, 20], 6.4, 13.6, 13.6, 0],
+[[2, 29, 20], 6.2, 13.6, 13.6, 0],
+[[2, 45, 19], 6.2, 13.6, 13.6, 0],
+[[3, 1, 19], 6.1, 13.5, 13.6, 0],
+[[3, 17, 19], 6.0, 13.5, 13.6, 0]
+]);
+var options = {
+title: '4/4/2022',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
