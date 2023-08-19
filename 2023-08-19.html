@@ -1,0 +1,45 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 0, 57], 23.3, 44.3, 53.5, 0],
+[[0, 16, 57], 23.1, 43.4, 53.3, 0],
+[[0, 32, 57], 23.0, 42.4, 53.0, 0],
+[[0, 48, 57], 22.9, 42.3, 53.0, 0],
+[[1, 4, 57], 22.6, 42.2, 52.9, 0],
+[[1, 20, 56], 22.4, 42.1, 52.8, 0],
+[[1, 36, 56], 22.2, 42.0, 52.8, 0],
+[[1, 52, 56], 22.2, 41.9, 52.7, 0],
+[[2, 8, 56], 22.2, 41.8, 52.7, 0],
+[[2, 24, 56], 22.1, 41.8, 52.6, 0],
+[[2, 40, 56], 22.1, 41.7, 52.5, 0],
+[[2, 56, 55], 22.2, 41.6, 52.4, 0]
+]);
+var options = {
+title: '19/8/2023',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
