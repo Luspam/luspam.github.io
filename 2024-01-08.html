@@ -1,0 +1,41 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 6, 17], 5.9, 9.5, 9.5, 0],
+[[0, 22, 17], 6.2, 9.5, 9.5, 0],
+[[0, 38, 17], 6.5, 9.5, 9.5, 0],
+[[0, 54, 17], 6.7, 9.5, 9.5, 0],
+[[1, 10, 17], 6.7, 9.5, 9.6, 0],
+[[1, 26, 17], 6.7, 9.5, 9.6, 0],
+[[1, 42, 17], 6.6, 9.5, 9.6, 0],
+[[1, 57, 17], 6.5, 9.5, 9.6, 0]
+]);
+var options = {
+title: '8/1/2024',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
