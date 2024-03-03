@@ -1,0 +1,15 @@
+import time
+
+devs = ['/sys/bus/w1/devices/28-3c840457ce28/w1_slave', '/sys/bus/w1/devices/28-3ce1d443e517/w1_slave']
+
+t = ["", ""]
+for i in range(0, 2):
+    with open(devs[i]) as f:
+        lines = f.readlines()
+        if len(lines) == 2 and "YES" in lines[0]:
+            k = lines[1].find("t=")
+            if k > 0:
+                t[i] = str(float(lines[1][k+2:].replace("\n", "")) / 1000)
+ts =  time.strftime("%Y-%m-%d %H:%M:%S")
+print('%s,%s,%s' % (ts, t[0], t[1]))
+            
