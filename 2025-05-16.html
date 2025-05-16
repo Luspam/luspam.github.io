@@ -1,0 +1,48 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 4, 18], 18.0, 35.5, 53.5, 0],
+[[0, 20, 18], 18.0, 35.5, 53.4, 0],
+[[0, 35, 18], 17.0, 35.5, 53.4, 0],
+[[0, 51, 18], 16.3, 35.4, 53.3, 0],
+[[1, 7, 18], 16.0, 35.4, 53.2, 0],
+[[1, 22, 18], 15.9, 35.4, 53.1, 0],
+[[1, 38, 18], 15.8, 35.4, 53.0, 0],
+[[1, 54, 18], 15.6, 35.4, 52.8, 0],
+[[2, 10, 18], 15.4, 35.3, 52.7, 0],
+[[2, 26, 17], 15.2, 35.3, 52.6, 0],
+[[2, 42, 17], 15.0, 35.3, 52.5, 0],
+[[2, 58, 17], 14.7, 35.2, 52.4, 0],
+[[3, 14, 16], 14.5, 35.2, 52.3, 0],
+[[3, 29, 16], 14.4, 35.2, 52.2, 0],
+[[3, 45, 16], 14.4, 35.1, 52.1, 0]
+]);
+var options = {
+title: '16/5/2025',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
