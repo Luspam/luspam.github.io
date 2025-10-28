@@ -1,0 +1,71 @@
+<head>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+</head>
+
+<body>
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+    <script>
+    d3.csv("https://raw.githubusercontent.com/Luspam/luspam.github.io/master/riscaldamento/2025-07.csv", function(err, rows){
+
+        function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+      }
+      
+      
+      var trace1 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Temp. P0',
+        x: unpack(rows, 't'),
+        y: unpack(rows, 'T0'),
+        line: {color: 'blue'}
+      }
+      
+      var trace2 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Temp. P1',
+        x: unpack(rows, 't'),
+        y: unpack(rows, 'T1'),
+        line: {color: 'orange'}
+      }
+
+      var trace_p0 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Pompa P0',
+        x: unpack(rows, 't'),
+        y: unpack(rows, 'P0'),
+        line: {color: 'cyan'}
+      }
+
+      var trace_p1 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Pompa P1',
+        x: unpack(rows, 't'),
+        y: unpack(rows, 'P1'),
+        line: {color: 'magenta'}
+      }
+
+      var data = [trace1, trace2, trace_p0, trace_p1];
+      
+      var layout = {
+        title: 'Temperatura Riscaldamento',
+        xaxis: {
+            autorange: true,
+            rangeslider: {autorange: true},
+            type: 'date'
+        },
+        yaxis: {
+          autorange: true,
+          fixedrange: false
+        } 
+    };
+      
+      Plotly.newPlot('myDiv', data, layout);
+      })
+      </script>
+      </body>
