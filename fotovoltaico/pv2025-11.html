@@ -1,0 +1,96 @@
+<head>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js'></script>
+</head>
+
+<body>
+	<div id='timechart'></div>
+	<div id='stacked'></div>
+    <script>
+    d3.csv("https://raw.githubusercontent.com/Luspam/luspam.github.io/master/fotovoltaico/2025-11.csv", function(err, rows){
+        function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+      }
+      
+      var trace1 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Consumo',
+        x: unpack(rows, 't'),
+        y: unpack(rows, 'consumo'),
+        line: {color: 'orange'}
+      }
+      
+      var trace2 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Produzione',
+        x: unpack(rows, 't'),
+        y: unpack(rows, 'produzione'),
+        line: {color: 'green'}
+      }
+
+      var data = [trace1, trace2];
+      
+      var layout = {
+        title: 'Consumo e Produzione Istantanei',
+        xaxis: {
+            autorange: true,
+            rangeslider: {autorange: true},
+            type: 'date'
+        },
+        yaxis: {
+          autorange: true,
+          fixedrange: false
+        } 
+    };
+    
+    Plotly.newPlot('timechart', data, layout);
+    })
+    d3.csv("https://raw.githubusercontent.com/Luspam/luspam.github.io/master/fotovoltaico/daily/2025-11.csv", function(err, rows){
+        function unpack(rows, key) {
+            return rows.map(function(row) { return row[key]; });
+        }
+
+        function unpackneg(rows, key) {
+            return rows.map(function(row) { return -row[key]; });
+        }
+
+        var trace1 = {
+            type: "bar",
+            name: 'Autoconsumo',
+            x: unpack(rows, 't'),
+            y: unpack(rows, 'cons_autoprodotto'),
+            marker: { color: 'green' }
+        }
+
+        var trace2 = {
+            type: "bar",
+            name: 'Eccedenza',
+            x: unpack(rows, 't'),
+            y: unpack(rows, 'prod_immessa'),
+            marker: { color: 'lightgreen' }
+        }
+
+        var trace3 = {
+            type: "bar",
+            name: 'Consumo da Rete',
+            x: unpack(rows, 't'),
+            y: unpackneg(rows, 'consumo_da_rete'),
+            marker: { color: 'orange' }
+        }
+
+        var data = [trace1, trace2, trace3];
+
+        var layout = {
+            title: 'Autoconsumo Giornaliero',
+            barmode: 'relative',
+            xaxis: { title: 'time' },
+            yaxis: { title: 'kWh'}
+        };
+
+        Plotly.newPlot('stacked', data, layout);
+    })
+    </script>
+</body>
