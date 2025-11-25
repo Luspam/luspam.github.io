@@ -1,0 +1,41 @@
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+		 var data = new google.visualization.DataTable();
+		  data.addColumn('timeofday', 'Ora');
+		  data.addColumn('number', 'Pannello');
+		  data.addColumn('number', 'AccumuloL');
+		  data.addColumn('number', 'AccumuloH');
+		  data.addColumn('number', 'Pompa (%)');
+
+		data.addRows([
+[[0, 5, 41], -1.0, 12.1, 12.7, 100],
+[[0, 21, 41], 0.2, 12.1, 12.7, 100],
+[[0, 37, 40], 1.5, 12.1, 12.7, 0],
+[[0, 52, 40], 1.6, 12.1, 12.7, 0],
+[[1, 8, 40], 1.6, 12.1, 12.7, 0],
+[[1, 23, 40], 1.0, 12.1, 12.7, 0],
+[[1, 32, 39], 0.5, 12.1, 12.7, 100],
+[[1, 47, 39], 0.4, 12.1, 12.7, 100]
+]);
+var options = {
+title: '25/11/2025',
+          legend: { position: 'bottom' },
+	  hAxis: { minValue: 0, maxValue: [23, 59, 59] }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1280px; height: 720px"></div>
+  </body>
+</html>
