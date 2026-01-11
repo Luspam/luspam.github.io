@@ -1,0 +1,26 @@
+nohup: ignoring input
+[26-01-11 20:37] T=19.6, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-11 20:47] T=19.7, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-11 20:57] T=19.8, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-11 21:07] T=19.8, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-11 21:17] T=19.9, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-11 21:28] T=20.0, t_set=20.0, pump_on=True Action=Spengo
+[26-01-11 21:38] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 21:48] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 21:58] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 22:08] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 22:18] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 22:28] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 22:38] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 22:48] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 22:58] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 23:08] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 23:18] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 23:28] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 23:38] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-01-11 23:48] T=19.9, t_set=20.0, pump_on=False Action=Accendo
+[26-01-11 23:58] T=19.9, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-12 00:08] T=19.8, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-12 00:18] T=19.8, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-12 00:28] T=19.7, t_set=20.0, pump_on=True Action=Nessuna
+[26-01-12 00:38] T=19.7, t_set=20.0, pump_on=True Action=Nessuna
