@@ -4842,3 +4842,39 @@ devices.capabilities.online False
 devices.capabilities.online False
 devices.capabilities.online False
 devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+devices.capabilities.online False
+[26-02-14 14:30] T=23.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 14:40] T=23.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 14:50] T=23.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 15:00] T=23.5, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 15:10] T=23.5, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 15:20] T=23.6, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 15:30] T=23.6, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 15:40] T=23.6, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 15:50] T=23.6, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 16:00] T=23.5, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 16:10] T=23.5, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 16:20] T=23.5, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 16:30] T=23.5, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 16:40] T=23.5, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 16:50] T=23.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 17:00] T=23.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 17:10] T=23.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 17:20] T=23.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 17:30] T=23.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 17:40] T=23.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 17:50] T=23.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 18:00] T=23.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 18:10] T=23.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 18:20] T=23.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 18:30] T=23.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-02-14 18:40] T=23.0, t_set=20.0, pump_on=False Action=Nessuna
