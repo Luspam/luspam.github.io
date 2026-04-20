@@ -13885,3 +13885,5 @@ devices.capabilities.online False
 [26-04-19 11:48] T=22.4, t_set=19.0, pump_on=False Action=Nessuna
 [26-04-19 11:51] Modo Estate, Action=Accendo
 [26-04-19 11:51] Modo Estate, Action=Spengo
+[26-04-20 11:52] Modo Estate, Action=Accendo
+[26-04-20 11:52] Modo Estate, Action=Spengo
