@@ -14461,3 +14461,10 @@ Traceback (most recent call last):
     if response.status_code == 200:
        ^^^^^^^^
 NameError: name 'response' is not defined
+[26-11-16 11:32] T=17.1, t_set=19.0, pump_on=False Action=Accendo
+[26-11-16 11:42] T=17.1, t_set=19.0, pump_on=True Action=Nessuna
+[26-11-16 11:52] T=17.1, t_set=19.0, pump_on=True Action=Nessuna
+[26-11-16 12:02] T=17.1, t_set=19.0, pump_on=True Action=Nessuna
+[26-11-16 12:12] T=17.2, t_set=19.0, pump_on=True Action=Nessuna
+[26-11-16 12:22] T=17.4, t_set=19.0, pump_on=True Action=Nessuna
+[26-11-16 12:32] T=17.5, t_set=20.0, pump_on=True Action=Nessuna
