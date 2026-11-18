@@ -14720,3 +14720,39 @@ NameError: name 'response' is not defined
 [26-11-18 06:16] T=19.9, t_set=20.0, pump_on=False Action=Accendo
 [26-11-18 06:26] T=19.9, t_set=20.0, pump_on=True Action=Nessuna
 [26-11-18 06:36] T=19.9, t_set=20.0, pump_on=True Action=Nessuna
+[26-11-18 06:46] T=20.0, t_set=20.0, pump_on=True Action=Spengo
+[26-11-18 06:56] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 07:06] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 07:16] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 07:26] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 07:36] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 07:46] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 07:56] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 08:06] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 08:16] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 08:26] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 08:36] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 08:46] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 08:56] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 09:06] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 09:16] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 09:26] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 09:36] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 09:46] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 09:56] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 10:06] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 10:17] Failed to get a valid response. Status code:504
+[26-11-18 10:27] Failed to get a valid response. Status code:504
+[26-11-18 10:37] Failed to get a valid response. Status code:502
+[26-11-18 10:47] Failed to get a valid response. Status code:504
+[26-11-18 10:57] T=19.8, t_set=20.0, pump_on=False Action=Accendo
+[26-11-18 11:08] T=19.8, t_set=20.0, pump_on=True Action=Nessuna
+[26-11-18 11:18] Failed to get a valid response. Status code:504
+[26-11-18 11:29] T=19.8, t_set=20.0, pump_on=True Action=Nessuna
+[26-11-18 11:39] Failed to get a valid response. Status code:504
+[26-11-18 11:50] T=20.0, t_set=20.0, pump_on=True Action=Spengo
+[26-11-18 12:00] Failed to get a valid response. Status code:502
+[26-11-18 12:10] Failed to get a valid response. Status code:504
+[26-11-18 12:20] Failed to get a valid response. Status code:504
+[26-11-18 12:30] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 12:40] Failed to get a valid response. Status code:504
