@@ -14756,3 +14756,39 @@ NameError: name 'response' is not defined
 [26-11-18 12:20] Failed to get a valid response. Status code:504
 [26-11-18 12:30] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
 [26-11-18 12:40] Failed to get a valid response. Status code:504
+[26-11-18 12:50] Failed to get a valid response. Status code:502
+[26-11-18 13:00] Failed to get a valid response. Status code:502
+[26-11-18 13:10] Failed to get a valid response. Status code:502
+[26-11-18 13:20] T=20.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 13:30] T=20.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 13:40] T=20.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 13:50] T=20.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 14:00] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 14:10] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 14:20] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 14:30] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 14:40] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 14:50] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 15:00] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 15:10] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 15:20] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 15:30] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 15:41] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 15:51] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 16:01] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 16:11] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 16:21] T=19.9, t_set=20.0, pump_on=False Action=Accendo
+[26-11-18 16:31] T=19.9, t_set=20.0, pump_on=True Action=Nessuna
+[26-11-18 16:41] T=19.9, t_set=20.0, pump_on=True Action=Nessuna
+[26-11-18 16:51] T=19.9, t_set=20.0, pump_on=True Action=Nessuna
+[26-11-18 17:01] T=20.0, t_set=20.0, pump_on=True Action=Spengo
+[26-11-18 17:11] T=20.0, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 17:21] T=20.1, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 17:31] T=20.2, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 17:41] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 17:51] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 18:01] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 18:11] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 18:21] T=20.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 18:31] T=20.4, t_set=20.0, pump_on=False Action=Nessuna
+[26-11-18 18:41] T=20.3, t_set=20.0, pump_on=False Action=Nessuna
